@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furniture Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20;
+      background: #f4f4f4;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      padding-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .price {
+      color: #080103;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+   
+
+    .card button {
+      background-color: #000;
+      color: white;
+      padding: 12px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .card button:hover {
+      background-color: #444;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 5px 10px;
+    }
+    .discount {
+        color: green;
+        font-size: 18px;
+        font-weight: bold;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="sofa7.jpg" alt="Modern Sofa">
+      <h3>Modern 3-Seater Sofa</h3>
+      <p class="price">&#8377;37999</p>
+      <p>Comfortable fabric sofa with wooden frame and elegant design.</p>
+      <p class="discount">Save 7%</p>
+      <button onclick="addToCart('Modern 3-Seater Sofa')">Add to Cart</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="sofa2.jpg" alt="Luxury Sofa">
+      <h3>Luxury Recliner Sofa</h3>
+      <p class="price">&#8377;39999</p>
+      <p>Premium leather recliner with adjustable backrest for extra comfort.</p>
+      <p class="discount">Save 5%</p>
+      <button onclick="addToCart('Luxury Recliner Sofa')">Add to Cart</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="sofa3.jpg" alt="Compact Sofa">
+      <h3>Compact Urban Sofa</h3>
+      <p class="price">&#8377;50799</p>
+      <p>Space-saving modern sofa perfect for apartments and small rooms.</p>
+      <p class="discount">Save 10%</p>
+      <button onclick="addToCart('Compact Urban Sofa')">Add to Cart</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="sofa4.jpg" alt="Corner Sofa">
+      <h3>Corner Sectional Sofa</h3>
+      <p class="price">&#8377;66999</p>
+      <p>Stylish L-shaped corner sofa with ample seating for families.</p>
+      <p class="discount">Save 30%</p>
+      <button onclick="addToCart('Corner Sectional Sofa')">Add to Cart</button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="sofa5.jpg" alt="Classic Sofa">
+      <h3>Classic Wooden Sofa</h3>
+      <p class="price">&#8377;59999</p>
+      <p>Elegant sofa with solid wooden legs and traditional craftsmanship.</p>
+      <p class="discount">Save 10%</p>
+      <button onclick="addToCart('Classic Wooden Sofa')">Add to Cart</button>
+    </div>
+
+    <!-- Repeating cards for variety -->
+
+    <!-- Card 6 -->
+    <div class="card">
+      <img src="sofa7.jpg" alt="Modern Sofa">
+      <h3>Velvet 3-Seater Sofa</h3>
+      <p class="price">&#8377;37999</p>
+      <p>Luxurious velvet upholstery with plush cushions and sleek arms.</p>
+      <p class="discount">Save 21%</p>
+      <button onclick="addToCart('Velvet 3-Seater Sofa')">Add to Cart</button>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+      <img src="sofa2.jpg" alt="Luxury Sofa">
+      <h3>Smart Recliner Sofa</h3>
+      <p class="price">&#8377;39999</p>
+      <p>Ergonomic design with power recline and USB charging ports.</p>
+      <p class="discount">Save 10%</p>
+      <button onclick="addToCart('Smart Recliner Sofa')">Add to Cart</button>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+      <img src="sofa3.jpg" alt="Compact Sofa">
+      <h3>Foldable Sofa Bed</h3>
+      <p class="price">&#8377;50799</p>
+      <p>Multifunctional sofa bed ideal for guests and small spaces.</p>
+      <p class="discount">Save 15%</p>
+      <button onclick="addToCart('Foldable Sofa Bed')">Add to Cart</button>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card">
+      <img src="sofa4.jpg" alt="Corner Sofa">
+      <h3>Luxury Corner Lounger</h3>
+      <p class="price">&#8377;66999</p>
+      <p>Chic corner design with soft cushioning and breathable fabric.</p>
+      <p class="discount">Save 10%</p>
+      <button onclick="addToCart('Luxury Corner Lounger')">Add to Cart</button>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card">
+      <img src="sofa5.jpg" alt="Classic Sofa">
+      <h3>Rustic Wooden Sofa</h3>
+      <p class="price">&#8377;59999</p>
+      <p>Handcrafted rustic design with durable materials and cozy comfort.</p>
+      
+      <button onclick="addToCart('Rustic Wooden Sofa')">Add to Cart</button>
+    </div>
+  </div>
+
+  <script>
+    function addToCart(product) {
+      alert(product + " added to cart!");
+    }
+  </script>
+
+</body>
+</html>
+
+

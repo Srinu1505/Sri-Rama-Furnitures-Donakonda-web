@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dress Store</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      padding-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 50%;
+    }
+
+      .price {
+        color: #080103;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .original-price {
+        color: skyblue;
+        text-decoration: line-through;
+        font-size: 18px;
+      }
+
+      .discount {
+        color: green;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .card button:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="dress1.jpg" alt="Floral Gown" height="300px" width="300px">
+        <h2>Floral Gown</h2>
+        <p class="price">&#8377;29999</p>
+        <p>Elegant floral print evening gown perfect for parties and special events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress2.jpg" alt="Casual Summer Dress" style="width:100%">
+        <h2>Casual Summer Dress</h2>
+        <p class="price">&#8377;29999</p>
+        <p>Lightweight and breathable dress ideal for hot summer days.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress3.jpg" alt="Red Midi Dress" style="width:100%">
+        <h2>Red Midi Dress</h2>
+        <p class="price">&#8377;29999</p>
+        <p>Stylish midi dress with a flattering silhouette and vibrant red color.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress5.jpg" alt="Blue Evening Dress" style="width:100%">
+        <h2>Blue Evening Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Classy blue dress suitable for formal occasions or dinner events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress6jpg.webp" alt="Printed Kurti" style="width:100%">
+        <h2>Printed Kurti</h2>
+        <p class="price">&#8377;17999</p>
+        <p>Traditional printed kurti with modern design for daily or festive wear.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress5.jpg" alt="Blue Evening Dress" style="width:100%">
+        <h2>Blue Evening Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Classy blue dress suitable for formal occasions or dinner events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress5.jpg" alt="Blue Evening Dress" style="width:100%">
+        <h2>Blue Evening Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Classy blue dress suitable for formal occasions or dinner events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress6jpg.webp" alt="Printed Kurti" style="width:100%">
+        <h2>Printed Kurti</h2>
+        <p class="price">&#8377;17999</p>
+        <p>Traditional printed kurti with modern design for daily or festive wear.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress7.jpg" alt="Party Wear Dress" style="width:100%">
+        <h2>Party Wear Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Chic and trendy party dress with shimmer finish and great comfort.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+    </div>
+
+    <script>
+      function addToCart(product) {
+        alert(product + " ");
+      }
+    </script>
+  </body>
+</html>
+

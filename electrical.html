@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      padding-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .price {
+      color: #080103;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 20px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .card button:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="fans.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;4999</p>
+        <p>High-speed fan for home or office use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="rice.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Rice cooker</h3>
+        <p class="price">&#8377;2999</p>
+        <p>Electric rice cooker for quick and easy meals.</p>
+        <p class="discount">Save 3%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="Ac.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Air cooler</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Powerful cooler for large rooms.</p>
+        <p class="discount">Save 7%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 12%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="mixy.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Mixy</h3>
+        <p class="price">&#8377;4999</p>
+        <p>Multi-speed mixer for blending and grinding.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fans.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;4999</p>
+        <p>High-speed fan for home or office use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="rice.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Rice cooker</h3>
+        <p class="price">&#8377;2999</p>
+        <p>Electric rice cooker for quick and easy meals.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="Ac.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Air cooler</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Powerful cooler for large rooms.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="mixy.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Mixy</h3>
+        <p class="price">&#8377;4999</p>
+        <p>Multi-speed mixer for blending and grinding.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+    </div>
+    <script>
+      function addToCart(product) {
+        alert(product + "");
+      }
+    </script>
+  </body>
+</html>

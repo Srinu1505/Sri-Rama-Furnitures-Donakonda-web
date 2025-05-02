@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Furniture Shop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      padding-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .card h1 {
+      font-size: 22px;
+      margin: 15px 0 5px;
+    }
+
+    .price {
+      color: #080103;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .card p {
+      margin: 5px 15px 15px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 15px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: #444;
+    }
+
+    .discount {
+      color: green;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="bed.jpg" alt="King size bed">      
+      <h1>Luxury King Bed</h1>
+      <p class="price">&#8377;39999</p>
+      <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed4.jpg" alt="Modern bed">
+      <h1>Modern King Bed</h1>
+      <p class="price">&#8377;51999</p>
+      <p>Description: A minimalist look combined with superior comfort and durability.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed3.jpg" alt="Stylish bed">
+      <h1>Classic Bed</h1>
+      <p class="price">&#8377;73999</p>
+      <p>Description: Timeless design for modern bedrooms with a classic touch.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed4.jpg" alt="Modern bed">
+      <h1>Modern King Bed</h1>
+      <p class="price">&#8377;51999</p>
+      <p>Description: A minimalist look combined with superior comfort and durability.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed3.jpg" alt="Stylish bed">
+      <h1>Classic Bed</h1>
+      <p class="price">&#8377;73999</p>
+      <p>Description: Timeless design for modern bedrooms with a classic touch.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed4.jpg" alt="Modern bed">
+      <h1>Modern King Bed</h1>
+      <p class="price">&#8377;51999</p>
+      <p>Description: A minimalist look combined with superior comfort and durability.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed4.jpg" alt="Modern bed">
+      <h1>Modern King Bed</h1>
+      <p class="price">&#8377;51999</p>
+      <p>Description: A minimalist look combined with superior comfort and durability.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed.jpg" alt="King size bed">      
+      <h1>Luxury King Bed</h1>
+      <p class="price">&#8377;39999</p>
+      <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed5.jpg" alt="Comfort bed">
+      <h1>Comfort King Bed</h1>
+      <p class="price">&#8377;59999</p>
+      <p>Description: Ideal for restful nights, perfect for both style and comfort.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed6.jpg" alt="Stylish wooden bed">
+      <h1>Wooden Finish Bed</h1>
+      <p class="price">&#8377;66999</p>
+      <p>Description: Strong wood frame with a smooth, polished finish for a premium look.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed.jpg" alt="King size bed">      
+      <h1>Luxury King Bed</h1>
+      <p class="price">&#8377;39999</p>
+      <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed6.jpg" alt="Stylish wooden bed">
+      <h1>Wooden Finish Bed</h1>
+      <p class="price">&#8377;66999</p>
+      <p>Description: Strong wood frame with a smooth, polished finish for a premium look.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed.jpg" alt="King size bed">      
+      <h1>Luxury King Bed</h1>
+      <p class="price">&#8377;39999</p>
+      <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed6.jpg" alt="Stylish wooden bed">
+      <h1>Wooden Finish Bed</h1>
+      <p class="price">&#8377;66999</p>
+      <p>Description: Strong wood frame with a smooth, polished finish for a premium look.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="bed7.jpg" alt="Elegant bed">
+      <h1>Elegant King Bed</h1>
+      <p class="price">&#8377;66999</p>
+      <p>Description: Elegant design with a premium feel, ideal for enhancing bedroom decor.</p>
+      <p class="discount">Save 18%</p>
+      <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+    </div>
+  </div>
+
+</body>
+<script>
+  function addToCart(product) {
+    alert(product + "");
+  }
+</script>
+</html>
+
+

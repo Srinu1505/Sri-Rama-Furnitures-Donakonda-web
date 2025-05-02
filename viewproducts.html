@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      padding-bottom: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .price {
+      color: #080103;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 20px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .card button:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="fans.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;4999</p>
+        <p>High-speed fan for home or office use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="rice.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Rice cooker</h3>
+        <p class="price">&#8377;2999</p>
+        <p>Electric rice cooker for quick and easy meals.</p>
+        <p class="discount">Save 3%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="Ac.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Air cooler</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Powerful cooler for large rooms.</p>
+        <p class="discount">Save 7%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 12%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="mixy.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Mixy</h3>
+        <p class="price">&#8377;4999</p>
+        <p>Multi-speed mixer for blending and grinding.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fans.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;4999</p>
+        <p>High-speed fan for home or office use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="rice.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Rice cooker</h3>
+        <p class="price">&#8377;2999</p>
+        <p>Electric rice cooker for quick and easy meals.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="Ac.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Air cooler</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Powerful cooler for large rooms.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="mixy.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Mixy</h3>
+        <p class="price">&#8377;4999</p>
+        <p>Multi-speed mixer for blending and grinding.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="sofa7.jpg" alt="Modern Sofa">
+        <h3>Modern 3-Seater Sofa</h3>
+        <p class="price">&#8377;37999</p>
+        <p>Comfortable fabric sofa with wooden frame and elegant design.</p>
+        <p class="discount">Save 7%</p>
+        <button onclick="addToCart('Modern 3-Seater Sofa')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="sofa2.jpg" alt="Luxury Sofa">
+        <h3>Luxury Recliner Sofa</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Premium leather recliner with adjustable backrest for extra comfort.</p>
+        <p class="discount">Save 5%</p>
+        <button onclick="addToCart('Luxury Recliner Sofa')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="sofa3.jpg" alt="Compact Sofa">
+        <h3>Compact Urban Sofa</h3>
+        <p class="price">&#8377;50799</p>
+        <p>Space-saving modern sofa perfect for apartments and small rooms.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('Compact Urban Sofa')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="sofa4.jpg" alt="Corner Sofa">
+        <h3>Corner Sectional Sofa</h3>
+        <p class="price">&#8377;66999</p>
+        <p>Stylish L-shaped corner sofa with ample seating for families.</p>
+        <p class="discount">Save 30%</p>
+        <button onclick="addToCart('Corner Sectional Sofa')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="sofa5.jpg" alt="Classic Sofa">
+        <h3>Classic Wooden Sofa</h3>
+        <p class="price">&#8377;59999</p>
+        <p>Elegant sofa with solid wooden legs and traditional craftsmanship.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('Classic Wooden Sofa')">Add to Cart</button>
+      </div>
+  
+      <!-- Repeating cards for variety -->
+  
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="sofa7.jpg" alt="Modern Sofa">
+        <h3>Velvet 3-Seater Sofa</h3>
+        <p class="price">&#8377;37999</p>
+        <p>Luxurious velvet upholstery with plush cushions and sleek arms.</p>
+        <p class="discount">Save 21%</p>
+        <button onclick="addToCart('Velvet 3-Seater Sofa')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 7 -->
+      <div class="card">
+        <img src="sofa2.jpg" alt="Luxury Sofa">
+        <h3>Smart Recliner Sofa</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Ergonomic design with power recline and USB charging ports.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('Smart Recliner Sofa')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 8 -->
+      <div class="card">
+        <img src="sofa3.jpg" alt="Compact Sofa">
+        <h3>Foldable Sofa Bed</h3>
+        <p class="price">&#8377;50799</p>
+        <p>Multifunctional sofa bed ideal for guests and small spaces.</p>
+        <p class="discount">Save 15%</p>
+        <button onclick="addToCart('Foldable Sofa Bed')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 9 -->
+      <div class="card">
+        <img src="sofa4.jpg" alt="Corner Sofa">
+        <h3>Luxury Corner Lounger</h3>
+        <p class="price">&#8377;66999</p>
+        <p>Chic corner design with soft cushioning and breathable fabric.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('Luxury Corner Lounger')">Add to Cart</button>
+      </div>
+  
+      <!-- Card 10 -->
+      <div class="card">
+        <img src="sofa5.jpg" alt="Classic Sofa">
+        <h3>Rustic Wooden Sofa</h3>
+        <p class="price">&#8377;59999</p>
+        <p>Handcrafted rustic design with durable materials and cozy comfort.</p>
+        
+        <button onclick="addToCart('Rustic Wooden Sofa')">Add to Cart</button>
+      </div>
+
+
+      <div class="card">
+        <img src="fans.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;4999</p>
+        <p>High-speed fan for home or office use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="rice.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Rice cooker</h3>
+        <p class="price">&#8377;2999</p>
+        <p>Electric rice cooker for quick and easy meals.</p>
+        <p class="discount">Save 3%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="Ac.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Air cooler</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Powerful cooler for large rooms.</p>
+        <p class="discount">Save 7%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 12%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="mixy.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Mixy</h3>
+        <p class="price">&#8377;4999</p>
+        <p>Multi-speed mixer for blending and grinding.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fans.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;4999</p>
+        <p>High-speed fan for home or office use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="rice.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Rice cooker</h3>
+        <p class="price">&#8377;2999</p>
+        <p>Electric rice cooker for quick and easy meals.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="Ac.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Air cooler</h3>
+        <p class="price">&#8377;39999</p>
+        <p>Powerful cooler for large rooms.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="mixy.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Mixy</h3>
+        <p class="price">&#8377;4999</p>
+        <p>Multi-speed mixer for blending and grinding.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="grind.html" alt="srinu" height="300px" width="300px">
+        <h3>Grinder</h3>
+        <p class="price">&#8377;7999</p>
+        <p>Durable grinder for kitchen use.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="air.jpg" alt="srinu" height="300px" width="300px">
+        <h3>Cooler</h3>
+        <p class="price">&#8377;9999</p>
+        <p>Compact air cooler for summer comfort.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="fan2.html" alt="srinu" height="300px" width="300px">
+        <h3>Fan</h3>
+        <p class="price">&#8377;2799</p>
+        <p>Economical fan with energy-saving feature.</p>
+        <p class="discount">Save 10%</p>
+        <button onclick="addToCart('The Product is Added In Card')">Add to Cart</button>
+      </div>
+
+
+      <div class="card">
+        <img src="bed.jpg" alt="King size bed">      
+        <h1>Luxury King Bed</h1>
+        <p class="price">&#8377;39999</p>
+        <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed4.jpg" alt="Modern bed">
+        <h1>Modern King Bed</h1>
+        <p class="price">&#8377;51999</p>
+        <p>Description: A minimalist look combined with superior comfort and durability.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed3.jpg" alt="Stylish bed">
+        <h1>Classic Bed</h1>
+        <p class="price">&#8377;73999</p>
+        <p>Description: Timeless design for modern bedrooms with a classic touch.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed4.jpg" alt="Modern bed">
+        <h1>Modern King Bed</h1>
+        <p class="price">&#8377;51999</p>
+        <p>Description: A minimalist look combined with superior comfort and durability.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed3.jpg" alt="Stylish bed">
+        <h1>Classic Bed</h1>
+        <p class="price">&#8377;73999</p>
+        <p>Description: Timeless design for modern bedrooms with a classic touch.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed4.jpg" alt="Modern bed">
+        <h1>Modern King Bed</h1>
+        <p class="price">&#8377;51999</p>
+        <p>Description: A minimalist look combined with superior comfort and durability.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed4.jpg" alt="Modern bed">
+        <h1>Modern King Bed</h1>
+        <p class="price">&#8377;51999</p>
+        <p>Description: A minimalist look combined with superior comfort and durability.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed.jpg" alt="King size bed">      
+        <h1>Luxury King Bed</h1>
+        <p class="price">&#8377;39999</p>
+        <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed5.jpg" alt="Comfort bed">
+        <h1>Comfort King Bed</h1>
+        <p class="price">&#8377;59999</p>
+        <p>Description: Ideal for restful nights, perfect for both style and comfort.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed6.jpg" alt="Stylish wooden bed">
+        <h1>Wooden Finish Bed</h1>
+        <p class="price">&#8377;66999</p>
+        <p>Description: Strong wood frame with a smooth, polished finish for a premium look.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed.jpg" alt="King size bed">      
+        <h1>Luxury King Bed</h1>
+        <p class="price">&#8377;39999</p>
+        <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed6.jpg" alt="Stylish wooden bed">
+        <h1>Wooden Finish Bed</h1>
+        <p class="price">&#8377;66999</p>
+        <p>Description: Strong wood frame with a smooth, polished finish for a premium look.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed.jpg" alt="King size bed">      
+        <h1>Luxury King Bed</h1>
+        <p class="price">&#8377;39999</p>
+        <p>Description: Comfortable and elegant king-size bed for a luxurious sleep experience.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed6.jpg" alt="Stylish wooden bed">
+        <h1>Wooden Finish Bed</h1>
+        <p class="price">&#8377;66999</p>
+        <p>Description: Strong wood frame with a smooth, polished finish for a premium look.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="bed7.jpg" alt="Elegant bed">
+        <h1>Elegant King Bed</h1>
+        <p class="price">&#8377;66999</p>
+        <p>Description: Elegant design with a premium feel, ideal for enhancing bedroom decor.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="table.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;29999</p>
+        
+        <p>Description: Elegant and modern design with premium wood finish.</p>
+        <p class="discount">Save 19%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table2.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;39999</p>
+        
+        <p>Description: Stylish 6-seater with a glossy finish.</p>
+        <p class="discount">Save 15%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table3.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;49799</p>
+        
+        <p>Description: Spacious and sturdy, perfect for family dinners.</p>
+        <p class="discount">Save 17%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table4.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;39799</p>
+        <p>Description: Contemporary design with clean lines and smooth edges.</p>
+        <p class="discount">Save 13%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table5.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;29799</p>
+        <p>Description: A compact and elegant table perfect for small spaces.</p>
+        <p class="discount">Save 12%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table6.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;29999</p>
+        
+        <p>Description: Modern design with adjustable legs for added flexibility.</p>
+        <p class="discount">Save 25%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+  
+      <!-- Duplicates of Existing Cards (Allowing .jpg) -->
+      <div class="card">
+        <img src="table.jpg" alt="Dining Table">
+        <p>Dining Table</p>
+        <p class="price">&#8377;29999</p>
+        <p>Description: Elegant and modern design with premium wood finish.</p>
+        <p class="discount">Save 19%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table2.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;39999</p>
+       
+        <p>Description: Stylish 6-seater with a glossy finish.</p>
+        <p class="discount">Save 15%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;29999</p> 
+        <p>Description: Elegant and modern design with premium wood finish.</p>
+        <p class="discount">Save 19%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table2.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;39999</p>
+       
+        <p>Description: Stylish 6-seater with a glossy finish.</p>
+        <p class="discount">Save 15%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table3.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;49799</p>
+        <p>Description: Spacious and sturdy, perfect for family dinners.</p>
+        <p class="discount">Save 17%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+  
+      <div class="card">
+        <img src="table3.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;49799</p>      
+        <p>Description: Spacious and sturdy, perfect for family dinners.</p>
+        <p class="discount">Save 17%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table4.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;39799</p>      
+        <p>Description: Contemporary design with clean lines and smooth edges.</p>
+        <p class="discount">Save 13%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table5.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;29799</p>
+        <p>Description: A compact and elegant table perfect for small spaces.</p>
+        <p class="discount">Save 12%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+      <div class="card">
+        <img src="table6.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p class="price">&#8377;29999</p>
+        <p>Description: Modern design with adjustable legs for added flexibility.</p>
+        <p class="discount">Save 25%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat.jpg" alt="King Size Mattress" height="300px" width="300px">
+        <h2>King Size Mattress</h2>
+        <p class="price">&#8377;10799</p>
+        <p>King Size Mattress - The perfect blend of comfort and support for a restful night.</p>
+        <p class="discount">Save 60%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat2.jpg" alt="Queen Size Mattress" style="width:100%">
+        <h2>Queen Size Mattress</h2>
+        <p class="price">&#8377;9899</p>
+        <p>Queen Size Mattress - Provides excellent support while being soft and comfortable.</p>
+        <p class="discount">Save 42%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat3.jpg" alt="King Size Mattress" style="width:100%">
+        <h2>King Size Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>King Size Mattress - Ideal for larger beds, offering plush comfort for sound sleep.</p>
+        <p class="discount">Save 50%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat4.jpg" alt="Queen Size Mattress" style="width:100%">
+        <h2>Queen Size Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Queen Size Mattress - Comfort and durability for a peaceful sleep experience.</p>
+        <p class="discount">Save 53%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat6.jpg" alt="Foam Mattress" height="300px" width="300px">
+        <h2>Foam Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Foam Mattress - Conforms to your body shape, relieving pressure points for better sleep.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat5.jpg" alt="Spring Mattress" height="300px" width="300px">
+        <h2>Spring Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Spring Mattress - Designed for enhanced airflow and firm support for your spine.</p>
+        <p class="discount">Save 47%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat6.jpg" alt="Foam Mattress" height="300px" width="300px">
+        <h2>Foam Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Foam Mattress - Conforms to your body shape, relieving pressure points for better sleep.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat6.jpg" alt="Foam Mattress" height="300px" width="300px">
+        <h2>Foam Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Foam Mattress - Conforms to your body shape, relieving pressure points for better sleep.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat5.jpg" alt="Spring Mattress" height="300px" width="300px">
+        <h2>Spring Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Spring Mattress - Designed for enhanced airflow and firm support for your spine.</p>
+        <p class="discount">Save 47%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat6.jpg" alt="Foam Mattress" height="300px" width="300px">
+        <h2>Foam Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Foam Mattress - Conforms to your body shape, relieving pressure points for better sleep.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat6.jpg" alt="Foam Mattress" height="300px" width="300px">
+        <h2>Foam Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Foam Mattress - Conforms to your body shape, relieving pressure points for better sleep.</p>
+        <p class="discount">Save 18%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat2.jpg" alt="Queen Size Mattress" style="width:100%">
+        <h2>Queen Size Mattress</h2>
+        <p class="price">&#8377;9899</p>
+        <p>Queen Size Mattress - Provides excellent support while being soft and comfortable.</p>
+        <p class="discount">Save 42%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat3.jpg" alt="King Size Mattress" style="width:100%">
+        <h2>King Size Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>King Size Mattress - Ideal for larger beds, offering plush comfort for sound sleep.</p>
+        <p class="discount">Save 50%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat4.jpg" alt="Queen Size Mattress" style="width:100%">
+        <h2>Queen Size Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Queen Size Mattress - Comfort and durability for a peaceful sleep experience.</p>
+        <p class="discount">Save 53%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="mat7.jpg" alt="Spring Mattress" height="300px" width="300px">
+        <h2>Spring Mattress</h2>
+        <p class="price">&#8377;8999</p>
+        <p>Spring Mattress - Offers both softness and firmness with excellent support.</p>
+        <p class="discount">Save 31%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+
+      <div class="card">
+        <img src="dress1.jpg" alt="Floral Gown" height="300px" width="300px">
+        <h2>Floral Gown</h2>
+        <p class="price">&#8377;29999</p>
+        <p>Elegant floral print evening gown perfect for parties and special events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress2.jpg" alt="Casual Summer Dress" style="width:100%">
+        <h2>Casual Summer Dress</h2>
+        <p class="price">&#8377;29999</p>
+        <p>Lightweight and breathable dress ideal for hot summer days.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress3.jpg" alt="Red Midi Dress" style="width:100%">
+        <h2>Red Midi Dress</h2>
+        <p class="price">&#8377;29999</p>
+        <p>Stylish midi dress with a flattering silhouette and vibrant red color.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress5.jpg" alt="Blue Evening Dress" style="width:100%">
+        <h2>Blue Evening Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Classy blue dress suitable for formal occasions or dinner events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress6jpg.webp" alt="Printed Kurti" style="width:100%">
+        <h2>Printed Kurti</h2>
+        <p class="price">&#8377;17999</p>
+        <p>Traditional printed kurti with modern design for daily or festive wear.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress5.jpg" alt="Blue Evening Dress" style="width:100%">
+        <h2>Blue Evening Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Classy blue dress suitable for formal occasions or dinner events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress5.jpg" alt="Blue Evening Dress" style="width:100%">
+        <h2>Blue Evening Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Classy blue dress suitable for formal occasions or dinner events.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress6jpg.webp" alt="Printed Kurti" style="width:100%">
+        <h2>Printed Kurti</h2>
+        <p class="price">&#8377;17999</p>
+        <p>Traditional printed kurti with modern design for daily or festive wear.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="dress7.jpg" alt="Party Wear Dress" style="width:100%">
+        <h2>Party Wear Dress</h2>
+        <p class="price">&#8377;19999</p>
+        <p>Chic and trendy party dress with shimmer finish and great comfort.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img src="dress6jpg.webp" alt="Printed Kurti" style="width:100%">
+        <h2>Printed Kurti</h2>
+        <p class="price">&#8377;17999</p>
+        <p>Traditional printed kurti with modern design for daily or festive wear.</p>
+        <p class="discount">Save 22%</p>
+        <p><button onclick="addToCart('The Product is Add in Card')">Add to Cart</button></p>
+      </div>
+  
+
+
+
+
+
+    </div>
+    <script>
+      function addToCart(product) {
+        alert(product + "");
+      }
+    </script>
+  </body>
+</html>
